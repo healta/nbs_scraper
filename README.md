@@ -12,7 +12,9 @@
 
 ##### To run in a virtual environment you'll need ~pip install virtualenv
 
-##### To activate it, ~source home/user/Downloads/nbs_scraper/bin/activate
+##### ~virtualenv –-version(to validate install), ~virtualenv virtual_env_name
+
+##### To activate it, ~source home/user/Downloads/nbs_scraper/virtual_env_name/bin/activate
 
 ##### Then ~pip install -r requirements.txt
 
