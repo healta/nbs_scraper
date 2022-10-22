@@ -19,6 +19,10 @@ class ScrapernbsPipeline:
         self.con = sqlite3.connect("NBS_scrapes.db")
         self.cur = self.con.cursor()
 
+    #I really wanted to use the sqlite3 rowid feature,
+    #but I couldn't figure out how to make SQLalchemy
+    #to access it, so made an autoincrementing ID as a primary key
+    #and url to be unique, that should prevent any doubling
     def create_table(self):
         self.cur.execute("""DROP TABLE IF EXISTS articles_info""")
         self.cur.execute("""CREATE TABLE articles_info(

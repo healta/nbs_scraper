@@ -5,7 +5,6 @@
 
 import scrapy
 
-
 class ScrapernbsItem(scrapy.Item):
     title = scrapy.Field()
     text = scrapy.Field()

@@ -15,8 +15,6 @@ while True:
 
     url = ('https://nbs.sk/en/press/news-overview/?table_post-list_params=%7B%22offset%22%3A{}%2C%22filter%22%3A%7B%22lang%22%3A%22en%22%7D%7D'.format(offset))
 
-    print("HELLO", url)
-
     driver = webdriver.Chrome()
 
     driver.get(url)
@@ -46,6 +44,10 @@ while True:
 
     driver.quit()
 
+    #I noticed the URLs the site uses have an offset number
+    #and I used it by incrementing it, instead of having
+    #Selenium click on the next page, figured it's easy
+    #and saves time, it's probably faster too
     offset+=5
 
 if links_added == 0:

@@ -4,6 +4,9 @@ from ..items import ScrapernbsItem
 class CreeperSpider(scrapy.Spider):
     name = 'creeper'
     
+    #I couldn't figure out how to bypass the javascript on the page
+    #with just scrapy, so I used Selenium to get all the /news/ links
+    #on the page, and then run them with scrapy
     with open ("/home/healta/Documents/Programming/articles.txt", "r") as f:
         links = f.readlines()
 
@@ -14,6 +17,8 @@ class CreeperSpider(scrapy.Spider):
 
         items = ScrapernbsItem()
         
+        #just using the css.selectors here, they all worked out fine
+        #with some minor formatting
         title = str(response.css(".headline::text").extract())
         text = response.css("#main p::text").extract()
         date = str(response.css(".nbs-post__date::text").extract())

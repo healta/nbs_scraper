@@ -10,10 +10,12 @@
 
 ##### ~cd nbs_scraper
 
-##### to run in a virtual environment you'll need ~pip install virtualenv
+##### To run in a virtual environment you'll need ~pip install virtualenv
 
-##### to activate it, ~source home/user/Downloads/nbs_scraper/bin/activate
+##### To activate it, ~source home/user/Downloads/nbs_scraper/bin/activate
 
-##### then ~pip install -r requirements.txt
+##### Then ~pip install -r requirements.txt
 
-##### to run the bot, ~scraperNBS, ~scraperNBS, ~scrapy crawl creepy
+##### To run the bot, ~scraperNBS, ~scraperNBS, ~scrapy crawl creepy
+
+##### The scraped data will be saved in a database called NBS_scrapes.db
