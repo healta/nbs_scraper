@@ -1,10 +1,11 @@
-#This scrapy script scrapes https://nbs.sk/en/
-#The instructions are linux based
+# This scrapy script scrapes https://nbs.sk/en/
 
-##Prerequisites: installed python, pip
+# The instructions are linux based
 
-##Clone the repository with:
+## Prerequisites: installed python, pip
 
-###git clone https://github.com/healta/nbs_scraper.git
+## Clone the repository with:
 
-###cd scraperNBS
+### git clone https://github.com/healta/nbs_scraper.git
+
+### cd scraperNBS
